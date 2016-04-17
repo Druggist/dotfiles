@@ -1,0 +1,10 @@
+[push]
+	default = simple
+[user]
+	email = m.najdora@gmail.com
+	name = Druggist
+[core]
+	autocrlf = input
+[alias]
+	lg = log --all --abbrev-commit --date=relative --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	s = status -s
