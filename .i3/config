@@ -19,7 +19,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Source Code Pro 10
+font pango:Source Sans Pro 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -160,7 +160,8 @@ exec --no-startup-id gnome-terminal
 exec --no-startup-id google-chrome-stable -app=https://play.spotify.com/browse
 
 # assigment to different desktops
-assign [class="Sublime"] $ws3
+assign [class="Kodi"] $ws4
+assign [class="Subl3"] $ws3
 assign [class="Gnome-terminal"] $ws2
 assign [class="google-chrome" instance="^play.spotify.com__browse$"] $ws10
 assign [class="google-chrome" instance="^google-chrome$"] $ws1
