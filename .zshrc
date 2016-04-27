@@ -1,5 +1,6 @@
 export VISUAL=nano
 export EDITOR=nano
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Path to your oh-my-zsh installation.
   export ZSH=~/.oh-my-zsh
@@ -55,7 +56,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras node npm bower extract common-aliases sublime sudo)
+plugins=(git git-extras node npm bower extract common-aliases sublime sudo archlinux)
 
 # User configuration
 
