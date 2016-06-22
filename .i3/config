@@ -157,7 +157,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id indicator-sound-switcher
 exec --no-startup-id google-chrome-stable
 exec --no-startup-id gnome-terminal
-exec --no-startup-id google-chrome-stable -app=https://play.spotify.com/browse
+# exec --no-startup-id google-chrome-stable -app=https://play.spotify.com/browse
 
 # assigment to different desktops
 assign [class="Kodi"] $ws4
@@ -209,6 +209,9 @@ bindsym $mod+F12 exec sudo poweroff
 
 # touchpad controls
 # bindsym XF86Display exec ~/bin/touchpad_toggle.sh
+
+# monitor controls
+# bindsym $mod+Shift+s exec ~/bin/monitors.sh
 
 # brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
