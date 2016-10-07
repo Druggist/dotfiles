@@ -9,3 +9,4 @@
 - Ponymix
 - Feh
 - Git-Extras
+- Compton
