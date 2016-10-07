@@ -154,6 +154,7 @@ exec_always --no-startup-id feh --bg-scale ~/.backgrounds/scathe-of-nargothrond.
 
 # startup programs
 exec --no-startup-id nm-applet
+exec --no-startup-id compton -f
 exec --no-startup-id indicator-sound-switcher
 exec --no-startup-id google-chrome-stable
 exec --no-startup-id gnome-terminal
@@ -223,6 +224,7 @@ set $sink `ponymix | grep sink | cut -c6`
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +2% && killall -SIGUSR1 i3status # +2% volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -2% && killall -SIGUSR1 i3status # -2% volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle && killall -SIGUSR1 i3status # mute sound
+bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute $sink toggle && killall -SIGUSR1 i3status # mute sound
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
