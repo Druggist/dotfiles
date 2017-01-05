@@ -10,3 +10,4 @@
 - Feh
 - Git-Extras
 - Compton
+- Sublime text
