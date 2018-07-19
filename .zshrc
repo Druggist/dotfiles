@@ -22,7 +22,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=7
+export UPDATE_ZSH_DAYS=2
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -30,9 +30,11 @@ export UPDATE_ZSH_DAYS=7
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
+# Import custom aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
@@ -56,10 +58,12 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras node npm bower extract common-aliases sublime sudo archlinux)
+plugins=(git node npm bower extract common-aliases sublime sudo archlinux)
+
+# Turn off beep
+setopt NO_BEEP
 
 # User configuration
-
 export PATH="~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -69,11 +73,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='nano'
+else
+   export EDITOR='nano'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

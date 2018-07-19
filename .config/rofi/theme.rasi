@@ -1,0 +1,115 @@
+/*
+ * ROFI Too Dark
+ *
+ * Based on OneDark.vim (https://github.com/joshdick/onedark.vim)
+ *
+ * Author: Benjamin Stauss
+ * User: me-benni
+ *
+ * Modified by: Sir Druggist
+ */
+
+configuration {
+
+    // The display name of this browser
+    display-ssh:                   "  ";
+    // The display name of this browser
+    display-run:                    "";
+    // The display name of this browser
+    display-drun:                   "";
+    // The display name of this browser
+    display-window:                 "";
+    display-combi:                  "";
+    show-icons: true;
+}
+
+
+* {
+  black:      #000000;
+  red:        #eb6e67;
+  green:      #95ee8f;
+  yellow:     #f8c456;
+  blue:       #6eaafb;
+  mangenta:   #d886f3;
+  cyan:       #6cdcf7;
+  emphasis:   #424242;
+  text:       #EEEEEE;
+  text-alt:   #E0E0E0;
+  fg:         #424242;
+  bg:         #212121cc;
+
+  spacing: 0;
+  background-color: transparent;
+
+  font: "Source Sans Pro 18";
+  text-color: @text;
+}
+
+window {
+  transparency: "real";
+  fullscreen: true;
+  background-color: @bg;
+}
+
+mainbox {
+  padding: 25% 15%;
+}
+
+inputbar {
+  margin: 0px 0px 20px 0px;
+  children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+prompt {
+  text-color: @text;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str: ":";
+  text-color: @text-alt;
+}
+
+entry {
+  margin: 0px 10px;
+}
+
+listview {
+  spacing: 0 10px;
+  dynamic: true;
+  scrollbar: false;
+}
+
+element {
+  padding: 15px;
+  text-color: @text-alt;
+  highlight: bold #95ee8f; /* green */
+  border-radius: 3px;
+}
+
+element selected {
+  background-color: @emphasis;
+  text-color: @text;
+}
+
+element urgent, element selected urgent {
+  text-color: @red;
+}
+
+element active, element selected active {
+  text-color: @purple;
+}
+
+message {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: @emphasis;
+  border: 1px;
+  border-color: @cyan;
+}
+
+button selected {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: @emphasis;
+}

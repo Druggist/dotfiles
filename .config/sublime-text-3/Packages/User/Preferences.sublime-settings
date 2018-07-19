@@ -1,7 +1,7 @@
 {
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"color_scheme": "Packages/Materialize/schemes/Material Monokai Soda.tmTheme",
 	"font-size": 9,
 	"font_size": 9,
 	"ignored_packages":
@@ -22,6 +22,6 @@
 	"material_theme_tabs_autowidth": true,
 	"material_theme_tabs_separator": true,
 	"overlay_scroll_bars": "enabled",
-	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme": "Material Monokai Soda.sublime-theme",
 	"word_wrap": true
 }
