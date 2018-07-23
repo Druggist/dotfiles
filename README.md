@@ -8,6 +8,7 @@ To make the most of this dotfiles install this dependencies:
 - Menu: Rofi
 - Print screen: Gimp & Scrot
 - Animations & transparency: Compton
+- Fonts: otf-font-awesome, powerline-fonts
 
 
 
