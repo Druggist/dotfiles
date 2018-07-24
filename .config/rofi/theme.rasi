@@ -41,7 +41,7 @@ configuration {
   spacing: 0;
   background-color: transparent;
 
-  font: "Source Sans Pro 18";
+  font: "Cantarell 18";
   text-color: @text;
 }
 
