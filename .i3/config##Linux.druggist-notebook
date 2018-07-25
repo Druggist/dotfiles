@@ -159,6 +159,7 @@ exec --no-startup-id google-chrome-stable -app=https://play.spotify.com/browse
 assign [class="Google-chrome" instance="^google-chrome$"] $ws1
 assign [class="Gnome-terminal"] $ws2
 assign [class="Sublime_text"] $ws3
+assign [class="jetbrains-webstorm"] $ws3
 assign [class="Kodi"] $ws4
 assign [class="Gimp"] $ws5
 assign [class="Inkscape"] $ws5
